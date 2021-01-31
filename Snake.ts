@@ -14,7 +14,7 @@ class Snake {
   
 }
 
-move(){
+move(currentPosition:number){
   if (currentDirection = 1);
     currentPosition + 1;
   else 
