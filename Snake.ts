@@ -11,24 +11,18 @@ class Snake {
     this.currentPosition = 0;
     this.currentDirection = 1;
   }
-  
+
+  move(currentPosition:number){
+    if (currentDirection = 1) {currentPosition + 1;}
+    else {currentPosition - 1;}
+  }
+
+  turn(){
+    if (currentDirection = 1){currentDirection = -1;}
+    else {currentDirection = 1;}
+  }
 }
-
-move(currentPosition:number){
-  if (currentDirection = 1);
-    currentPosition + 1;
-  else 
-    currentPosition - 1;
-}
-
-turn(){
-  if (currentDirection = 1)
-    currentDirection = -1;
-  else
-    currentDirection = 1;
-}
-
-public get position();
-  return this.getPosition;
-
+  public get position(){
+    return this.getPosition;
+  }
 export default Snake;
