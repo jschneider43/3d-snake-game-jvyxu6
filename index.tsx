@@ -5,7 +5,7 @@ import './style.css';
 import display from './display';
 import Snake from './Snake';
 import SnakeTests from './SnakeTests';
-
+import WorldModel from './WorldModel';
 interface AppProps { }
 interface AppState {
   name: string;
@@ -43,6 +43,15 @@ class App extends Component<AppProps, AppState> {
 render(<App />, document.getElementById('root'));
 
 // Add display statements below
-const Snake = new Snake();
+let snake = new Snake();
+let world = new WorldModel(snake);
 
-display("Let's get started with React TypeScript!");
+
+
+display(
+    "snake is at position " + 
+      world.snake.currentPosition.x + 
+      ", " + 
+        world.snake.currentPosition.y
+);
+

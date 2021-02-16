@@ -1,10 +1,11 @@
 import display from './display';
+import Point from "./Point";
 
 // place your code on line 5 above the export statement below
 
 class Snake {
   
-  currentPosition: number;
+  currentPosition: Point;
   currentDirection: number;
   x: xcoord;
   y: ycoord;
@@ -16,12 +17,20 @@ class Snake {
     this.y = 0;
   }
 
-  move(currentPosition:number){
-    if (currentDirection = 0) this.position = new Point(this.position.x,this.position.y);
-    else if (currentDirection = 1) this.position = new Point(this.position.x,this.position.y);
-    else if (currentDirection = 2) this.position = new Point(this.position.x,this.position.y);
-    else (currentDirection = 3) this.position = new Point(this.position.x,this.position.y);
-  }
+  move(steps:number){
+    let x = this.cuurentPosition.x;
+    let y = this.currentPosition.y;
+
+    if (this.currentPosition = 1) {
+      y += steps;     
+    }
+    if (this.currentPosition = 2) {
+      x += steps;     
+    }if (this.currentPosition = 3) {
+      y -= steps;     
+    }if (this.currentPosition = 4) {
+      x -= steps;     
+    }
 
   turn(){
     if (currentDirection = 1){currentDirection = -1;}
@@ -29,17 +38,15 @@ class Snake {
   }
 
   turnLeft(){
-    if(currentDirection = 0) currentDirection + 1;
-    else if(currentDirection = 1) currentDirection + 1;
-    else if(currentDirection = 2) currentDirection + 1;
-    else currentDirection = 3
+    this.currentDirection--;
+      if (this.currentDirection = 0)
+        this.currentDirection = 3;
   }
 
   turnRight(){
- if(currentDirection = 3) currentDirection - 1;
-    else if(currentDirection = 2) currentDirection - 1;
-    else if(currentDirection = 1) currentDirection - 1;
-    else currentDirection = 0
+    this.currentDirection++;
+      if (this.currentDirection = 0)
+        this.currentDirection = 3;
   }
 
   set snake(s:snake){
@@ -50,25 +57,6 @@ class Snake {
     return this.getPosition;
   }
 
-class Point {
-  private xcoord:number;
-  private ycoord:number;
-
-  constructor(){
-    this.xcoord = xcoord;
-    this.ycoord = ycoord;
-  }
-
-class WorldModel(){
-
-  constructor(){
-    this.snake = s;
-
-  update(steps){
-    
-  }
-  }
-}
 
 }
   public get x(){}
