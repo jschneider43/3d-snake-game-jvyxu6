@@ -57,8 +57,10 @@ class Snake {
     return this.getPosition;
   }
 
+  get direction(){
+    return this.currentDirection();
+  }
 
 }
-  public get x(){}
-  public get y(){}
+
 export default Snake;
