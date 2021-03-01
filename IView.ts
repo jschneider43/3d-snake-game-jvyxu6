@@ -1,0 +1,7 @@
+interface View {
+
+  display(){
+
+  }
+
+}
