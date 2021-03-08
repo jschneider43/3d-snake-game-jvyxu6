@@ -5,9 +5,9 @@ class WorldModel {
 
   constructor(s:snake) {
     this._snake = s;
-
     this.width: number;
     this.height: number;
+    this._view = null;
   }
 
   update(steps:number){
@@ -23,6 +23,10 @@ class WorldModel {
 
   get height(){
     return this.height;
+  }
+
+  public set view() {
+    this._view = view;
   }
 
 }

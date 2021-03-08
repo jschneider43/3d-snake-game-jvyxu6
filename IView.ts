@@ -1,7 +1,8 @@
+import WorldModel from "./WorldModel";
 interface View {
 
-  display(){
+  display(world: WorldModel): void;
 
   }
 
-}
+  export default View;
