@@ -11,10 +11,12 @@ class Snake {
   y: ycoord;
 
   constructor(){
-    this.currentPosition = 0;
+    this.currentParts[startPosition];
     this.currentDirection = 1;
     this.x = 0;
     this.y = 0;
+    this.startPosition;
+    this.size;
   }
 
   move(steps:number){
@@ -59,6 +61,14 @@ class Snake {
 
   get direction(){
     return this.currentDirection();
+  }
+
+  currentParts[startPosition];
+  for(let i=0; i=1; i=i+1)
+
+  didCollide(){
+    if this.Snake(currentParts) = s;
+      return true;
   }
 
 }

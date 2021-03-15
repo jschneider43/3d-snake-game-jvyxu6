@@ -3,18 +3,26 @@ import Snake from "./Snake"
 class WorldModel {
   _snake: Snake;
 
-  constructor(s:snake) {
-    this._snake = s;
+  constructor() {
+    this._snake = null;
     this.width: number;
     this.height: number;
     this._view = null;
+    allSnakes[];
+    allViews[];
   }
 
   update(steps:number){
     this._snake.move(steps);
+    allSnakes(move.Snake);
+    allViews(){
+      return this.update;
+    }
+    snakeCollide[];  
+
   }
   get snake() {
-    return this._snake;
+    return this.allSnakes;
   }
 
   get width(){
@@ -27,6 +35,14 @@ class WorldModel {
 
   public set view() {
     this._view = view;
+  }
+
+  addSnake(s){
+    Snake[s];
+  }
+
+  addView(v){
+    View[v];
   }
 
 }

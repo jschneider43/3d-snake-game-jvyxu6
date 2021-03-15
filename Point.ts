@@ -14,6 +14,13 @@ class Point {
   get y(){
       return this.ycoord;
   }
+
+  equals(p){
+    if this.Point(x,y) = p;
+      return true;
+  }
+
+
 }
 
 export default Point;
