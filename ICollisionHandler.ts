@@ -1,0 +1,6 @@
+interface CollisionHandler{
+
+  applyAction()
+
+
+}

@@ -69,6 +69,30 @@ class Snake {
   didCollide(){
     if this.Snake(currentParts) = s;
       return true;
+
+    if this.type != "snake";
+      return true;
+  }
+
+  interface Collidable extends Snake{
+    constructor(){
+      this.isCurrentlyActive = true;
+    }
+
+    update(move)
+
+    die()
+      isCurrentlyActive = false;
+
+    get isActive;
+      return isCurrentlyActive;
+
+    get type;
+      return "snake";
+
+    grow()
+    return Points++;
+
   }
 
 }
