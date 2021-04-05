@@ -10,6 +10,7 @@ class WorldModel {
     this._view = null;
     allSnakes[];
     allViews[];
+    aca = ActorCollisionHandlers;
   }
 
   update(steps:number){

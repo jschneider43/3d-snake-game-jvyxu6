@@ -9,9 +9,7 @@ class ActorCollisionHandlers{
   collidedType = "food";
 
   addCollisionAction(colliderType, collidedType, actionApplicator){
-
-
-
+    
     
   }
 
