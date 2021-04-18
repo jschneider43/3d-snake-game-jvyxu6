@@ -8,7 +8,6 @@ class Player {
   abstract makeTurn(){
     
   }
-
 }
 
 class AvoidWallsPlayer extends Player {
@@ -19,6 +18,11 @@ class AvoidWallsPlayer extends Player {
 
   makeTurn(){
     snake.turnLeft = turnSnakeLeft;
+  }
+
+  isActive{
+    if Snake = active;
+      return true;
   }
 
 }

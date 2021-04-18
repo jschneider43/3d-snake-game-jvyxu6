@@ -33,5 +33,9 @@ class SnakeController {
     return worldModel.height;
   }
 
+  isSnakeActive{
+      return true;
+  }
+
 }
 export default SnakeController;

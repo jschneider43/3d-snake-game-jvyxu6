@@ -31,6 +31,19 @@ class CanvasView implements View {
     );
 
   }
+
+  update{
+    if Actor.snake;
+      display Snake;
+    
+
+  }
+
+
+  dispose{
+    document.body.removeChild();
+  }
+
 }
 
 export default CanvasView;

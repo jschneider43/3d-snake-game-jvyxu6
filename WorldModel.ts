@@ -21,6 +21,11 @@ class WorldModel {
     }
     snakeCollide[];  
 
+    Actor.Food(Math.floor(n*Math.random()));
+
+    reset{
+      dispose();
+    }
   }
   get snake() {
     return this.allSnakes;

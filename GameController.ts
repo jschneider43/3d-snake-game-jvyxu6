@@ -1,6 +1,8 @@
 class GameController{
 
-  constructor(world: WorldModel);
+  constructor(world: WorldModel){
+    g = game;
+  }
 
   run(){
     lastTime = 0;
